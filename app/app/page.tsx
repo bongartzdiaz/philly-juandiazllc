@@ -41,11 +41,37 @@ export default async function AppPage() {
         <div style={{ position: "absolute", inset: 0, background: "radial-gradient(500px 300px at 50% 0%, rgba(94,255,177,.08), transparent 60%)", pointerEvents: "none" }} />
         <div style={{ position: "relative" }}>
           <div style={{ fontFamily: "'JetBrains Mono'", fontSize: 11, letterSpacing: ".14em", textTransform: "uppercase", color: "var(--muted-soft)", marginBottom: 14 }}>
+            ◉ Dispatch surface
+          </div>
+          <Link
+            href="/app/jobs"
+            style={{
+              display: "flex",
+              justifyContent: "space-between",
+              alignItems: "center",
+              padding: "18px 22px",
+              border: "1px solid var(--accent)",
+              borderRadius: 12,
+              background: "rgba(94,255,177,.06)",
+              marginBottom: 20,
+              transition: "all .3s var(--ease)",
+            }}
+          >
+            <div>
+              <div style={{ fontSize: 16, fontWeight: 500, color: "var(--accent)" }}>Jobs board →</div>
+              <div style={{ fontFamily: "'JetBrains Mono'", fontSize: 10, color: "var(--muted-soft)", letterSpacing: ".08em", marginTop: 4 }}>
+                Live · create, assign, track
+              </div>
+            </div>
+            <span style={{ fontFamily: "'JetBrains Mono'", fontSize: 10, letterSpacing: ".14em", color: "var(--accent)", textTransform: "uppercase" }}>
+              Enter
+            </span>
+          </Link>
+          <div style={{ fontFamily: "'JetBrains Mono'", fontSize: 11, letterSpacing: ".14em", textTransform: "uppercase", color: "var(--muted-soft)", marginTop: 28, marginBottom: 14 }}>
             ◉ Coming online
           </div>
           <ul style={{ listStyle: "none", display: "flex", flexDirection: "column", gap: 14, padding: 0 }}>
             {[
-              { name: "Dispatch surface", status: "In build", hint: "ETA pilot 2026" },
               { name: "Field client (PWA)", status: "In build", hint: "Offline-first" },
               { name: "Live map + routing", status: "Scoping", hint: "Phase 2" },
               { name: "Operator analytics", status: "Scoping", hint: "Phase 3" },
