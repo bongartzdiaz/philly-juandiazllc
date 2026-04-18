@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Link from "next/link";
+import { Logo } from "@/components/Logo";
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://philly.juandiazllc.com";
 
@@ -29,9 +30,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body>
         <div className="shell">
           <nav className="top">
-            <Link href="/" className="brand">
-              <span className="dot" />
-              <span>Philly · Ops</span>
+            <Link href="/" className="brand" style={{ gap: 12, color: "var(--accent)" }}>
+              <Logo size={24} />
+              <span style={{ color: "var(--text)" }}>Philly · Ops</span>
             </Link>
             <div className="nav-right">
               <a href="https://juandiazllc.com" className="always">← juandiazllc.com</a>
