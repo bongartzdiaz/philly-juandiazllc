@@ -104,6 +104,9 @@ export default async function AppPage() {
       </div>
 
       <div style={{ display: "flex", gap: 10, marginTop: 32, flexWrap: "wrap" }}>
+        <a className="btn primary" href="https://diaz.juandiazllc.com/app">
+          ◉ Diaz · Master Command →
+        </a>
         <a className="btn ghost" href="https://juandiazllc.com/app">
           ← Operator hub
         </a>
